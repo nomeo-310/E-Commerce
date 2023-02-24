@@ -1,0 +1,178 @@
+.product {
+    margin-top: 60px;
+    .product-container {
+        padding: 20px 60px;
+        display: flex;
+        gap: 15px;
+        height: 90vh;
+        margin-bottom: 20px;
+        .left {
+            width: 10%;
+            overflow: hidden;
+            .thumbnails {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                cursor: pointer;
+                .item {
+                    width: 100%;
+                    height: 140px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: 50% 20%;
+                    }
+                }
+            }
+        }
+        .center {
+            width: 50%;
+            .image {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 50% 20%;
+                }
+            }
+        }
+        .right {
+            width: 40%;
+            padding: 0 10px;
+            .desc {
+                h1 {
+                    font-size: 30px;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                }
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    color: #148fde
+                }
+                p {
+                    text-align: justify;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
+            }
+            .quantity {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                h3 {
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    margin-right: 30px;
+                }
+                button {
+                    width: 30px;
+                    height: 30px;
+                    outline: none;
+                    border: none;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                span {
+                    margin: 0 5px;
+                }
+            }
+            .add-buttons {
+                display: flex;
+                gap: 15px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                button {
+                    display: inline-block;
+                    padding: 9px 23px;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    background: #148fde;
+                    color: #fff;
+                    cursor: pointer;
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .product-details {
+                border-bottom: 1px solid #148fde;
+                padding-bottom: 30px;
+                margin-bottom: 20px;
+                li {
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                    color: gray;
+                    .link {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .bottom {
+                width: 50%;
+                li {
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    border-bottom: 1px solid #148fde;
+                    padding: 8px 0;
+                }
+                li:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .product {
+        margin-top: 60px;
+        .product-container {
+            padding: 30px 70px;
+            flex-direction: column;
+            border-bottom: 1px solid #148fde;
+            height: 100%;
+            .left {
+                width: 70%;
+                .thumbnails {
+                    flex-direction: row;
+                    .item {
+                        width: 50%;
+                    }
+                }
+            }
+            .center {
+                width: 100%;
+            }
+            .right {
+                width: 100%;
+                padding: 0 10px;
+                .desc {
+                    h1 {
+                        font-size: 27px;
+                    }
+                    h2 {
+                        font-size: 18px;
+                    }
+                }
+                .add-buttons {
+                    width: 100%;
+                    justify-content: space-between;
+                    button {
+                        padding: 9px 10px;
+                        font-size: 13px;
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

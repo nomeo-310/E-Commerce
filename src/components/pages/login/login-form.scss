@@ -1,0 +1,210 @@
+.login-form {
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    width: 33%;
+    background: #fff;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+
+    .user-image {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #148fde;
+        }
+    }
+    form {
+        margin-top: 20px;
+        .login,
+        .register {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .top {
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            .nav-item {
+                border: none;
+                background: none;
+                font-size: 25px;
+                text-transform: capitalize;
+                cursor: pointer;
+            }
+            .nav-item:hover {
+                color: #e81123;
+            }
+            .nav-item.selected {
+                color: #148fde;
+            }
+        }
+        .close-button {
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            width: 40px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            i {
+                font-size: 15px;
+            }
+        }
+        .close-button:hover {
+            background: #e81123;
+            color: #fff;
+        }
+    }
+    .bottom {
+        .input {
+            width: 100%;
+            position: relative;
+            input {
+                width: 100%;
+                height: 50px;
+                padding: 10px 15px;
+                outline: none;
+                border: 1px solid #ccc;
+                margin: 15px 0;
+                font-size: 16px;
+            }
+            input::placeholder {
+                text-transform: capitalize;
+                font-size: 15px;
+            }
+            input:focus {
+                border: 1px solid #148fde;
+            }
+            input:first-child {
+                margin-top: 0;
+            }
+            input:last-child {
+                margin-bottom: 0;
+            }
+            .error-icons {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-size: 20px;
+                display: flex;
+                display: none;
+            }
+            p {
+                font-size: 15px;
+                margin: 4px 0;
+                display: none;
+                text-transform: capitalize;
+            }
+        }
+        .input.error,
+        .input.valid {
+            input {
+                margin: 5px 0;
+            }
+            input:first-child {
+                margin-top: 0;
+            }
+            input:last-child {
+                margin-bottom: 0;
+            }
+            p {
+                display: block;
+            }
+        }
+        .input.valid {
+            input {
+                border: 1px solid #419d78;
+                margin: 5px 0;
+            }
+            input:first-child {
+                margin-top: 0;
+            }
+            input:last-child {
+                margin-bottom: 0;
+            }
+            .error-icons {
+                display: flex;
+                .fa-check {
+                    display: block;
+                    color: #419d78;
+                }
+                .fa-exclamation-circle {
+                    display: none;
+                }
+            }
+            p {
+                display: block;
+            }
+        }
+        .input.user.error,
+        .input.pass.error,
+        .input.mail.error,
+        .input.cpass.error {
+            input {
+                border: 1px solid #e81123;
+            }
+            .error-icons {
+                display: flex;
+                .fa-exclamation-circle {
+                    display: block;
+                    color: #e81123;
+                }
+                .fa-check {
+                    display: none;
+                }
+            }
+            p {
+                color: #e81123;
+            }
+        }
+        .input.user.valid,
+        .input.pass.valid,
+        .input.mail.valid,
+        .input.cpass.valid {
+            input {
+                border: 1px solid #419d78;
+            }
+            .error-icons {
+                display: flex;
+                .fa-check {
+                    display: block;
+                    color: #419d78;
+                }
+                .fa-exclamation-circle {
+                    display: none;
+                }
+            }
+            p {
+                color: #419d78;
+            }
+        }
+        button {
+            border: none;
+            display: inline-block;
+            padding: 10px 25px;
+            background: #148fde;
+            color: #fff;
+            text-transform: capitalize;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    }
+}
+@media (max-width:600px) {
+    .login-form {
+        right: 40px;
+        width: 80%;
+    }
+}

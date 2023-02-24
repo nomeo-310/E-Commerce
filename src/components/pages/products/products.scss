@@ -1,0 +1,93 @@
+.products {
+    margin-top: 70px;
+    .products-container {
+        padding: 0 60px;
+        padding-bottom: 30px;
+        display: flex;
+        gap: 20px;
+        .left {
+            width: 15%;
+            h1 {
+                text-transform: capitalize;
+                font-size: 25px;
+            }
+            .category-list {
+                margin: 15px 0;
+                li {
+                    width: 80%;
+                    text-transform: capitalize;
+                    padding: 4px 0;
+                    cursor: pointer;
+                }
+                li:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+        .right {
+            width: 85%;
+            .top {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 15px;
+            }
+            .bottom {
+                height: 38px;
+                .pagination {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15px;
+                    gap: 8px;
+                    text-transform: capitalize;
+                    list-style: none;
+
+                    .page-num {
+                        padding: 8px 15px;
+                        border-radius: 30px;
+                        cursor: pointer;
+                    }
+                    .prev,
+                    .next {
+                        cursor: pointer;
+                        padding: 8px 15px;
+                    }
+
+                    .active-num {
+                        padding: 8px 0;
+                        background: #148fde;
+                        color: #fff;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .products {
+        .products-container {
+            padding: 0 40px;
+            display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .left {
+                    width: 100%;
+                    .category-list {
+                        li {
+                            width: 50%;
+                        }
+                    }
+                }
+                .right {
+                    width: 100%;
+                    .top {
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 15px;
+                    }
+                }
+            }
+            
+        }
+}

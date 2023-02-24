@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Urbanist-Black;
+    src: url(./font/Urbanist-Black.ttf);
+}
+@font-face {
+    font-family: Urbanist-Bold;
+    src: url(./font/Urbanist-Bold.ttf)
+}
+@font-face {
+    font-family: Urbanist-ExtraBold;
+    src: url(./font/Urbanist-ExtraBold.ttf)
+}
+@font-face {
+    font-family: Urbanist-Light;
+    src: url(./font/Urbanist-Light.ttf)
+}
+@font-face {
+    font-family: Urbanist-Medium;
+    src: url(./font/Urbanist-Medium.ttf)
+}
+@font-face {
+    font-family: Urbanist-Regular;
+    src: url(./font/Urbanist-Regular.ttf)
+}
+@font-face {
+    font-family: Urbanist-SemiBold;
+    src: url(./font/Urbanist-SemiBold.ttf)
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Urbanist-Regular';
+    box-sizing: border-box;
+    user-select: none;
+}
+.app{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   .link {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+   }
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+    font-family: 'Urbanist-Regular';
+}
+html::-webkit-scrollbar,
+.chat-section-container::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-thumb,
+.chat-section-container::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background: #af6e40;
+    transition: all 0.5s ease-in-out;
+}
+html::-webkit-scrollbar-thumb:hover,
+.chat-section-container::-webkit-scrollbar-thumb:hover {
+    background: #f3ae7c;
+}
+html::-webkit-scrollbar-track,
+.chat-section-container::-webkit-scrollbar-track {
+    background: transparent;
+}

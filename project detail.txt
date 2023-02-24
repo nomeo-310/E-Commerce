@@ -1,0 +1,3 @@
+project_no: 40,
+project_tag: e_commerce,
+responsivenes: only to 600px,
